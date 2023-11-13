@@ -9,7 +9,7 @@ export const SignupForm = () => {
 
   useEffect(() => {
     console.log("FETCH! ");
-    fetch("/customers")
+    fetch("http://127.0.0.1:5555/customers")
       .then((res) => res.json())
       .then((data) => {
         setCustomers(data);
